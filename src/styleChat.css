@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: rgb(189, 235, 255);
+}
+.dark{
+    background: rgb(19, 19, 19);
+}
+.myChat{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 10;
+}
+.message{
+    background-color: rgb(241, 241, 241);
+    width: fit-content;
+    padding: 7px 10px;
+    max-width: 30vh;
+    border-radius: 20px;
+    margin: 10px  3px 0 ;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.8px;
+}
+.sended{
+    background-color: rgb(13, 138, 255);
+    align-self: flex-end;
+    color: white;
+}
+.controller{
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    gap: 10px;
+    background-color: rgb(235, 235, 235);
+}
+.barText{
+    outline: none;
+    caret: rgb(0, 63, 238);
+    flex-grow: 1;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(239, 239, 239);
+}
+.btnSend{
+    padding: 5px 10px;
+    background-color:blueviolet;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    &:active{
+        scale: 0.999;
+    }
+}
